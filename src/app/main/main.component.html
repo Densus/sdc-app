@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <div class="card-title text-center">
+            <b>Simple Date Converter</b>
+        </div>
+        <div class="card-body">
+            <form [formGroup]="convertForm">
+                <div class="form-group">
+                    <label>Input RFC-3339 Formatted Date</label>
+                    <input type="text" formControlName="date" class="form-control" aria-describedby="emailHelp"
+                           placeholder="Enter formatted date">
+                </div>
+            </form>
+            <!--            <div class="form-group">-->
+            <button class="btn btn-primary btn-block" type="submit" (click)="submit()">Convert Date</button>
+            <br>
+            <flash-messages></flash-messages>
+            <!--            </div>-->
+
+        </div>
+    </div>
+</div>
